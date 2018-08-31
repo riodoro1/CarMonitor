@@ -43,14 +43,14 @@ LightsSensor lightsSensor(LIGHTS_PIN, IGNITION_PIN);
 BatteryVoltageSensor batteryVoltageSensor(BATTERY_VOLTS_PIN, BATTERY_VOLTS_R2/(BATTERY_VOLTS_R2 + BATTERY_VOLTS_R1), 11);
 
 Sensor *sensors[] = {
-    //&outsideTempSensor,
-    //&insideTempSensor,
-    //&engineTempSensor,
-    //&coolantSensor,
-    //&batteryVoltageSensor,
-    //&batteryCurrentSensor,
-    //&alternatorCurrentSensor,
-    //&fanSensor,
+    &outsideTempSensor,
+    &insideTempSensor,
+    &engineTempSensor,
+    &coolantSensor,
+    &batteryVoltageSensor,
+    &batteryCurrentSensor,
+    &alternatorCurrentSensor,
+    &fanSensor,
     &lightsSensor
 };
 
