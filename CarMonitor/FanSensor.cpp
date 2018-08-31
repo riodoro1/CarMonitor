@@ -29,7 +29,7 @@ void FanSensor::fetchValue() {
     if(engineTemperature > _tempTreshold) {
         digitalWrite(_controlPin, HIGH);
         
-        if(_isInControl && rpm < 100.0) {
+        if(_isInControl && rpm < 1000.0) {
             setStatus(SensorStatus::Error);
             return;
         }
