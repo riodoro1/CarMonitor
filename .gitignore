@@ -1,1 +1,4 @@
 .DS_Store
+CarMonitor/Builds/*
+CarMonitor.xcodeproj/xcuserdata/*
+CarMonitor.xcodeproj/project.xcworkspace/*
